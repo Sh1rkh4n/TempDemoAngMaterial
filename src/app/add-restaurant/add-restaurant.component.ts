@@ -26,6 +26,7 @@ export class AddRestaurantComponent implements OnInit {
 
   ngOnInit() {
     this.maxRatingArr = Array.from(Array(this.starCount).keys());
+    // this.maxRatingArr = Array(this.starCount).fill(0);
   }
 
   HandleMouseEnter(index: number) {
