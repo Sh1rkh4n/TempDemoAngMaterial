@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Restaurant } from '../restaurant';
 
 @Component({
   selector: 'app-add-restaurant',
@@ -8,19 +9,44 @@ import { Component, OnInit, Input } from '@angular/core';
 export class AddRestaurantComponent implements OnInit {
   @Input() starCount: number = 5;
   @Input() selectedStar: number = 0;
-
+  @Output() onRating: EventEmitter<number> = new EventEmitter<number>();
   maxRatingArr: any = [];
   previousSelection: number = 0;
 
+  restaurantRecords: Restaurant = {
+    id: 0,
+    name: '',
+    owner: '',
+    mobile: '',
+    email: '',
+    location: '',
+    rating: 0,
+  };
   constructor() {}
 
   ngOnInit() {
-    this.maxRatingArr = Array(this.starCount).fill(0);
+    this.maxRatingArr = Array.from(Array(this.starCount).keys());
   }
 
-  handleMouseEnter(index: number) {
+  HandleMouseEnter(index: number) {
     this.selectedStar = index + 1;
   }
-  handleMouseLeave() {}
-  setRating(index: number) {}
+  HandleMouseLeave() {
+    if (this.previousSelection !== 0) {
+      this.selectedStar = this.previousSelection;
+    } else {
+      this.selectedStar = 0;
+    }
+  }
+  SetRating(index: number) {
+    this.selectedStar = index + 1;
+    this.previousSelection = this.selectedStar;
+    this.onRating.emit(this.selectedStar + 1);
+  }
+
+  // To the child component App-component for example:
+  // Handle(event: number) {
+  //   alert(`You rate ${event}} !`);
+  // }
+  // (onRating)="Handle($event)"
 }
