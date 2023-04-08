@@ -1,0 +1,30 @@
+table {
+  width: 80%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.button-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mat-primary {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mat-warn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mat-success {
+  color: aqua;
+}

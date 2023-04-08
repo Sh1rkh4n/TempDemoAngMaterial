@@ -1,0 +1,14 @@
+.container-restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-elements {
+  width: 500px;
+}
+
+.checked {
+  color: orange;
+}

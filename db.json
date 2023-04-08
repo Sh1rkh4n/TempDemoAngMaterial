@@ -1,0 +1,319 @@
+{
+  "Restaurants": [
+    {
+      "id": 1,
+      "name": "Vámház",
+      "owner": "Tulaj vám József",
+      "mobile": "+36301234567",
+      "email": "vamhaz@email.com",
+      "location": "Komárom",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Turul",
+      "owner": "Turul Achime",
+      "mobile": "+361234237",
+      "email": "turul@email.com",
+      "location": "Tatabánya",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Pikant",
+      "owner": "Pikant Tulaja",
+      "mobile": "+362323",
+      "email": "pikant@email.com",
+      "location": "Tata",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Klapka",
+      "owner": "Klapka Ichova",
+      "mobile": "+33301234567",
+      "email": "klapka@email.com",
+      "location": "Komárno",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 6,
+      "name": "Vámház",
+      "owner": "Tulaj vám József",
+      "mobile": "+36301234567",
+      "email": "vamhaz@email.com",
+      "location": "Komárom",
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "name": "Turul",
+      "owner": "Turul Achime",
+      "mobile": "+361234237",
+      "email": "turul@email.com",
+      "location": "Tatabánya",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "name": "Pikant",
+      "owner": "Pikant Tulaja",
+      "mobile": "+362323",
+      "email": "pikant@email.com",
+      "location": "Tata",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "name": "Klapka",
+      "owner": "Klapka Ichova",
+      "mobile": "+33301234567",
+      "email": "klapka@email.com",
+      "location": "Komárno",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 11,
+      "name": "Vámház",
+      "owner": "Tulaj vám József",
+      "mobile": "+36301234567",
+      "email": "vamhaz@email.com",
+      "location": "Komárom",
+      "rating": 4
+    },
+    {
+      "id": 12,
+      "name": "Turul",
+      "owner": "Turul Achime",
+      "mobile": "+361234237",
+      "email": "turul@email.com",
+      "location": "Tatabánya",
+      "rating": 4
+    },
+    {
+      "id": 13,
+      "name": "Pikant",
+      "owner": "Pikant Tulaja",
+      "mobile": "+362323",
+      "email": "pikant@email.com",
+      "location": "Tata",
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "name": "Klapka",
+      "owner": "Klapka Ichova",
+      "mobile": "+33301234567",
+      "email": "klapka@email.com",
+      "location": "Komárno",
+      "rating": 5
+    },
+    {
+      "id": 15,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 16,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 17,
+      "name": "Vámház",
+      "owner": "Tulaj vám József",
+      "mobile": "+36301234567",
+      "email": "vamhaz@email.com",
+      "location": "Komárom",
+      "rating": 4
+    },
+    {
+      "id": 18,
+      "name": "Turul",
+      "owner": "Turul Achime",
+      "mobile": "+361234237",
+      "email": "turul@email.com",
+      "location": "Tatabánya",
+      "rating": 4
+    },
+    {
+      "id": 19,
+      "name": "Pikant",
+      "owner": "Pikant Tulaja",
+      "mobile": "+362323",
+      "email": "pikant@email.com",
+      "location": "Tata",
+      "rating": 5
+    },
+    {
+      "id": 20,
+      "name": "Klapka",
+      "owner": "Klapka Ichova",
+      "mobile": "+33301234567",
+      "email": "klapka@email.com",
+      "location": "Komárno",
+      "rating": 5
+    },
+    {
+      "id": 21,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 22,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 23,
+      "name": "Vámház",
+      "owner": "Tulaj vám József",
+      "mobile": "+36301234567",
+      "email": "vamhaz@email.com",
+      "location": "Komárom",
+      "rating": 4
+    },
+    {
+      "id": 24,
+      "name": "Turul",
+      "owner": "Turul Achime",
+      "mobile": "+361234237",
+      "email": "turul@email.com",
+      "location": "Tatabánya",
+      "rating": 4
+    },
+    {
+      "id": 25,
+      "name": "Pikant",
+      "owner": "Pikant Tulaja",
+      "mobile": "+362323",
+      "email": "pikant@email.com",
+      "location": "Tata",
+      "rating": 5
+    },
+    {
+      "id": 26,
+      "name": "Klapka",
+      "owner": "Klapka Ichova",
+      "mobile": "+33301234567",
+      "email": "klapka@email.com",
+      "location": "Komárno",
+      "rating": 5
+    },
+    {
+      "id": 27,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 28,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 29,
+      "name": "Vámház",
+      "owner": "Tulaj vám József",
+      "mobile": "+36301234567",
+      "email": "vamhaz@email.com",
+      "location": "Komárom",
+      "rating": 4
+    },
+    {
+      "id": 30,
+      "name": "Turul",
+      "owner": "Turul Achime",
+      "mobile": "+361234237",
+      "email": "turul@email.com",
+      "location": "Tatabánya",
+      "rating": 4
+    },
+    {
+      "id": 31,
+      "name": "Pikant",
+      "owner": "Pikant Tulaja",
+      "mobile": "+362323",
+      "email": "pikant@email.com",
+      "location": "Tata",
+      "rating": 5
+    },
+    {
+      "id": 32,
+      "name": "Klapka",
+      "owner": "Klapka Ichova",
+      "mobile": "+33301234567",
+      "email": "klapka@email.com",
+      "location": "Komárno",
+      "rating": 5
+    },
+    {
+      "id": 33,
+      "name": "Csárda",
+      "owner": "Csárdás József",
+      "mobile": "+3630333222",
+      "email": "csardas@email.com",
+      "location": "Győr",
+      "rating": 3
+    },
+    {
+      "id": 34,
+      "name": "Pikant",
+      "owner": "Pikant Tulaja",
+      "mobile": "+362323",
+      "email": "pikant@email.com",
+      "location": "Tata",
+      "rating": 5
+    },
+    {
+      "id": 35,
+      "name": "Klapka",
+      "owner": "Klapka Ichova",
+      "mobile": "+33301234567",
+      "email": "klapka@email.com",
+      "location": "Komárno",
+      "rating": 5
+    }
+  ]
+}
