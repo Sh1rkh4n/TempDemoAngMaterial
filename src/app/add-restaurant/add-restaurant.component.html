@@ -47,27 +47,12 @@
       </mat-form-field>
     </div>
     <div>
-      <button
-        mat-icon-button
-        *ngFor="let ratingId of ratingArr; index as i"
-        [id]="'star_' + i"
-        (click)="onClick(i + 1)"
-        [matTooltip]="ratingId + ''"
-        matTooltipPosition="above"
-      >
-        <mat-icon>
-          {{ showIcon(i) }}
-        </mat-icon>
-      </button>
-      <mat-error *ngIf="starCount == null || starCount == 0">
-        Star count is <strong>required</strong> and cannot be zero
-      </mat-error>
-    </div>
-    <div>
       <mat-icon
         *ngFor="let icon of maxRatingArr; let index = index"
         (mouseenter)="handleMouseEnter(index)"
-        [ngClass]="{ checked: rating > index }"
+        (mouseleave)="handleMouseLeave()"
+        (click)="setRating(index)"
+        [ngClass]="{ checked: selectedStar > index }"
       >
         star
       </mat-icon>
