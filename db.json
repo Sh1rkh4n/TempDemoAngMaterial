@@ -314,6 +314,15 @@
       "email": "klapka@email.com",
       "location": "Komárno",
       "rating": 5
+    },
+    {
+      "id": 36,
+      "name": "New Food Restauarnt",
+      "owner": "Adam Kovari",
+      "mobile": "+36 30 333333",
+      "email": "valami@valami.com",
+      "location": "New New New",
+      "rating": 5
     }
   ]
 }

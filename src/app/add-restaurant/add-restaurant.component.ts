@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Restaurant } from '../restaurant';
+import { RestaurantService } from '../restaurant.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-restaurant',
@@ -22,11 +24,18 @@ export class AddRestaurantComponent implements OnInit {
     location: '',
     rating: 0,
   };
-  constructor() {}
+
+  constructor(private rs: RestaurantService, private router: Router) {}
 
   ngOnInit() {
     this.maxRatingArr = Array.from(Array(this.starCount).keys());
     // this.maxRatingArr = Array(this.starCount).fill(0);
+  }
+
+  addRecords() {
+    this.rs.newRestaurant(this.restaurantRecords).subscribe((data) => {
+      this.router.navigate(['/']);
+    });
   }
 
   HandleMouseEnter(index: number) {

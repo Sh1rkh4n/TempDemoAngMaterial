@@ -15,4 +15,12 @@
 
 mat-icon {
   cursor: pointer;
+  margin-bottom: 20px;
+}
+
+mat-raised-button {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  width: 500px;
 }

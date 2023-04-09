@@ -20,8 +20,9 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { FormsModule } from '@angular/forms';
+import { EditRestaurantComponent } from './edit-restaurant/edit-restaurant.component';
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, AddRestaurantComponent],
+  declarations: [AppComponent, DashboardComponent, AddRestaurantComponent, EditRestaurantComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
