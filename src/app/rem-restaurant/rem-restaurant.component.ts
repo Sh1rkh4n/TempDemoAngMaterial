@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, Input } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { RestaurantService } from '../restaurant.service';
 
@@ -8,13 +8,17 @@ import { RestaurantService } from '../restaurant.service';
   styleUrls: ['./rem-restaurant.component.css'],
 })
 export class RemRestaurantComponent implements OnInit {
+  @Input() modalText: string = '';
+
   constructor(
     private rs: RestaurantService,
     public dialogRef: MatDialogRef<RemRestaurantComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.modalText = `ID: ${this.data.id} NAME: ${this.data.name}`;
+  }
 
   confirmDelete() {
     this.rs.deleteRestaurant(this.data.id).subscribe(() => {

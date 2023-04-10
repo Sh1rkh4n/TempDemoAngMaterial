@@ -57,12 +57,12 @@ export class DashboardComponent implements AfterViewInit, OnInit {
     }
   }
 
-  openDeleteModal(enterAnimationDuration: string, exitAnimationDuration: string, id: number): void {
+  openDeleteModal(enterAnimationDuration: string, exitAnimationDuration: string, id: number, name: string): void {
     const deleteConfirmConst = this.dialog.open(RemRestaurantComponent, {
       width: '250px',
       enterAnimationDuration,
       exitAnimationDuration,
-      data: { id },
+      data: { id, name },
     });
 
     deleteConfirmConst.afterClosed().subscribe((result) => {
