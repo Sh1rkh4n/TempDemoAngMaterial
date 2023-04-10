@@ -1,6 +1,42 @@
 {
   "Restaurants": [
     {
+      "id": 1,
+      "name": "Restaurant Itali",
+      "owner": "Olaszos New",
+      "mobile": "+3630333222",
+      "email": "olaszos@email.com",
+      "location": "Budapest",
+      "rating": 3
+    },
+    {
+      "id": 2,
+      "name": "Restaurante Gelato",
+      "owner": "Gelato Amaretti",
+      "mobile": "+363330333222",
+      "email": "gelato@email.com",
+      "location": "Győr",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Mercatino",
+      "owner": "Mercand Dama",
+      "mobile": "+3630333222",
+      "email": "merca@email.com",
+      "location": "Budapest",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Halász Csárda",
+      "owner": "H. L. Péter",
+      "mobile": "+3630333222",
+      "email": "hal@email.com",
+      "location": "Komárom",
+      "rating": 4
+    },
+    {
       "id": 5,
       "name": "Csárda",
       "owner": "Csárdás József",
