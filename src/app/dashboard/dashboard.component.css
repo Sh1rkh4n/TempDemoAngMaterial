@@ -15,16 +15,30 @@ th.mat-sort-header-sorted {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.mat-mdc-raised-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .mat-primary {
   margin-left: 10px;
   margin-right: 10px;
 }
-.mat-warn {
-  margin-left: 10px;
-  margin-right: 10px;
+/* .mat-success {
+  color: aqua;
+} */
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  background-color: rgb(255, 251, 220);
 }
 
-.mat-success {
-  color: aqua;
+.mat-mdc-header-row {
+  background-color: rgb(243, 231, 253);
+}
+
+.mat-column-id {
+  width: 50px;
+  border-right: 1px;
+  border-right-style: dashed;
+  border-right-color: rgb(189, 189, 189);
 }

@@ -22,6 +22,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { FormsModule } from '@angular/forms';
 import { EditRestaurantComponent } from './edit-restaurant/edit-restaurant.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [AppComponent, DashboardComponent, AddRestaurantComponent, EditRestaurantComponent],
@@ -44,6 +45,7 @@ import { MatCardModule } from '@angular/material/card';
     MatTooltipModule,
     MatCardModule,
     FormsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

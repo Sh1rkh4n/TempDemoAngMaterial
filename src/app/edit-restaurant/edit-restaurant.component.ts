@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Restaurant } from '../restaurant';
 import { RestaurantService } from '../restaurant.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-restaurant',
@@ -25,7 +25,7 @@ export class EditRestaurantComponent implements OnInit {
     rating: 0,
   };
 
-  constructor(private rs: RestaurantService, private route: ActivatedRoute) {}
+  constructor(private rs: RestaurantService, private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     this.maxRatingArr = Array.from(Array(this.starCount).keys());
@@ -38,13 +38,15 @@ export class EditRestaurantComponent implements OnInit {
   getById(id: number) {
     this.rs.getRestaurantsById(id).subscribe((data) => {
       this.restaurantRecords = data;
+      this.selectedStar = data.rating;
+      this.previousSelection = data.rating;
     });
   }
 
   updateRecords() {
-    // this.rs.newRestaurant(this.restaurantRecords).subscribe((data) => {
-    //   this.router.navigate(['/']);
-    // });
+    this.rs.updateRestaurant(this.restaurantRecords).subscribe(() => {
+      this.router.navigate(['/']);
+    });
   }
 
   HandleMouseEnter(index: number) {

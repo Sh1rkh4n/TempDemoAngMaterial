@@ -35,7 +35,7 @@
       <div>
         <mat-form-field appearance="outline" class="form-elements">
           <mat-label>Rating Given</mat-label>
-          <mat-select [(ngModel)]="selectedStar" [(value)]="restaurantRecords.rating">
+          <mat-select [(ngModel)]="restaurantRecords.rating" [(value)]="selectedStar">
             <mat-option
               *ngFor="let options of maxRatingArr; let index = index"
               (click)="SetRating(index)"
@@ -57,7 +57,16 @@
         </mat-icon>
       </div>
       <div>
-        <button mat-raised-button (click)="updateRecords()" type="button" color="accent">Add New Records</button>
+        <button mat-raised-button (click)="updateRecords()" type="button" color="primary">Update Records</button>
+        <button
+          mat-raised-button
+          [routerLink]="['/']"
+          type="button"
+          color="warn"
+          style="margin-left: 250px; width: 100px"
+        >
+          Cancel
+        </button>
       </div>
     </div>
   </mat-card>

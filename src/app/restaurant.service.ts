@@ -24,8 +24,13 @@ export class RestaurantService {
     return this.http.get<Restaurant>(`http://localhost:3000/Restaurants/${id}`);
   }
 
-  //update records by id
-  updateRestaurantById(payload: Restaurant): Observable<Restaurant[]> {
+  //update records
+  updateRestaurant(payload: Restaurant): Observable<Restaurant[]> {
     return this.http.put<Restaurant[]>(`http://localhost:3000/Restaurants/${payload.id}`, payload);
+  }
+
+  //delete records
+  deleteRestaurant(id: number) {
+    return this.http.delete(`http://localhost:3000/Restaurants/${id}`);
   }
 }
