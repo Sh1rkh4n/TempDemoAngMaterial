@@ -62,9 +62,10 @@
         <th mat-header-cell *matHeaderCellDef>Action</th>
         <td mat-cell *matCellDef="let element">
           <a [routerLink]="['/edit-restaurant', element.id]">
-            <mat-icon aria-hidden="false" aria-label="Edit icon" fontIcon="edit"></mat-icon>
+            <mat-icon color="primary" aria-hidden="false" aria-label="Edit icon" fontIcon="edit"></mat-icon>
           </a>
           <mat-icon
+            color="warn"
             aria-hidden="false"
             (click)="openDeleteModal('50ms', '50ms', element.id)"
             aria-label="Remove icon"
