@@ -23,9 +23,10 @@ import { FormsModule } from '@angular/forms';
 import { EditRestaurantComponent } from './edit-restaurant/edit-restaurant.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
+import { RemRestaurantComponent } from './rem-restaurant/rem-restaurant.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, AddRestaurantComponent, EditRestaurantComponent],
+  declarations: [AppComponent, DashboardComponent, AddRestaurantComponent, EditRestaurantComponent, RemRestaurantComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

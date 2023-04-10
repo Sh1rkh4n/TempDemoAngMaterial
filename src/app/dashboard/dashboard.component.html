@@ -2,7 +2,7 @@
   <div class="button-container">
     <!-- <button mat-raised-button (click)="addData()" class="mat-primary">Add New Entry</button>
     <button mat-raised-button [disabled]="!dataSource" (click)="removeData()" class="mat-warn">Remove Selected</button> -->
-    <button mat-raised-button (click)="addData()" color="accent" routerLink="/add-restaurant">Add New Entry</button>
+    <button mat-raised-button color="accent" routerLink="/add-restaurant">Add New Entry</button>
     <!-- <button mat-raised-button (click)="removeData()" [disabled]="!dataSource" color="accent">Remove Selected</button> -->
   </div>
 
@@ -64,6 +64,13 @@
           <a [routerLink]="['/edit-restaurant', element.id]">
             <mat-icon aria-hidden="false" aria-label="Edit icon" fontIcon="edit"></mat-icon>
           </a>
+          <mat-icon
+            aria-hidden="false"
+            (click)="openDeleteModal('50ms', '50ms', element.id)"
+            aria-label="Remove icon"
+            fontIcon="delete"
+            style="margin-left: 10px"
+          ></mat-icon>
         </td>
       </ng-container>
 

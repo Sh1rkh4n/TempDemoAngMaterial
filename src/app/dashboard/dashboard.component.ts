@@ -5,6 +5,8 @@ import { MatSort, Sort } from '@angular/material/sort';
 import { LiveAnnouncer } from '@angular/cdk/a11y';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatDialog } from '@angular/material/dialog';
+import { RemRestaurantComponent } from '../rem-restaurant/rem-restaurant.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,8 +17,9 @@ export class DashboardComponent implements AfterViewInit, OnInit {
   // oninit
   displayedColumns: string[] = ['id', 'name', 'owner', 'mobile', 'email', 'location', 'rating', 'action'];
   dataSource = new MatTableDataSource<Restaurant>();
+  allRestaurants: Restaurant[] = [];
 
-  constructor(private restaurant: RestaurantService, private _liveAnnouncer: LiveAnnouncer) {}
+  constructor(private restaurant: RestaurantService, public dialog: MatDialog, private _liveAnnouncer: LiveAnnouncer) {}
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -54,11 +57,18 @@ export class DashboardComponent implements AfterViewInit, OnInit {
     }
   }
 
-  addData() {
-    console.log('Add');
-  }
+  openDeleteModal(enterAnimationDuration: string, exitAnimationDuration: string, id: number): void {
+    const deleteConfirmConst = this.dialog.open(RemRestaurantComponent, {
+      width: '250px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+      data: { id },
+    });
 
-  removeData() {
-    console.log('Remove');
+    deleteConfirmConst.afterClosed().subscribe((result) => {
+      if (result) {
+        this.allRestaurants = this.allRestaurants.filter((f) => f.id !== id);
+      }
+    });
   }
 }

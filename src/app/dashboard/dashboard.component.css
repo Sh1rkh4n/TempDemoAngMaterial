@@ -34,6 +34,7 @@ th.mat-sort-header-sorted {
 
 .mat-mdc-header-row {
   background-color: rgb(243, 231, 253);
+  font-style: italic;
 }
 
 .mat-column-id {
