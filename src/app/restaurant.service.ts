@@ -10,15 +10,22 @@ export class RestaurantService {
   constructor(private http: HttpClient) {}
 
   //get all records
-  getAll(): Observable<Restaurant[]> {
+  getAllRestaurant(): Observable<Restaurant[]> {
     return this.http.get<Restaurant[]>('http://localhost:3000/Restaurants');
   }
 
+  //add new record
   newRestaurant(payload: Restaurant): Observable<Restaurant[]> {
     return this.http.post<Restaurant[]>('http://localhost:3000/Restaurants', payload);
   }
 
-  editRestaurant(id: number): Observable<Restaurant> {
+  //get records by ID
+  getRestaurantsById(id: number): Observable<Restaurant> {
     return this.http.get<Restaurant>(`http://localhost:3000/Restaurants/${id}`);
+  }
+
+  //update records by id
+  updateRestaurantById(payload: Restaurant): Observable<Restaurant[]> {
+    return this.http.put<Restaurant[]>(`http://localhost:3000/Restaurants/${payload.id}`, payload);
   }
 }

@@ -13,7 +13,7 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class DashboardComponent implements AfterViewInit, OnInit {
   // oninit
-  displayedColumns: string[] = ['id', 'name', 'owner', 'mobile', 'email', 'location', 'rating'];
+  displayedColumns: string[] = ['id', 'name', 'owner', 'mobile', 'email', 'location', 'rating', 'action'];
   dataSource = new MatTableDataSource<Restaurant>();
 
   constructor(private restaurant: RestaurantService, private _liveAnnouncer: LiveAnnouncer) {}
@@ -27,7 +27,7 @@ export class DashboardComponent implements AfterViewInit, OnInit {
   }
 
   ngOnInit(): void {
-    this.restaurant.getAll().subscribe((data) => {
+    this.restaurant.getAllRestaurant().subscribe((data) => {
       this.dataSource.data = data;
     });
   }

@@ -57,14 +57,26 @@
         <td mat-cell *matCellDef="let element">{{ element.rating }}</td>
       </ng-container>
 
+      <!-- action Column -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <td mat-cell *matCellDef="let element">
+          <a [routerLink]="['/edit-restaurant', element.id]"></a>
+          <mat-icon aria-hidden="false" aria-label="Edit icon" fontIcon="edit"></mat-icon>
+        </td>
+      </ng-container>
+
+      <!-- Display  the columns -->
       <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 
+      <!-- If filter no matching -->
       <tr class="mat-row" *matNoDataRow>
         <td class="mat-cell" colspan="4">No data matching the filter "{{ input.value }}"</td>
       </tr>
     </table>
 
+    <!-- Paginator section -->
     <div>
       <mat-paginator
         [pageSizeOptions]="[5, 10, 15]"

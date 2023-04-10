@@ -7,7 +7,7 @@ import { EditRestaurantComponent } from './edit-restaurant/edit-restaurant.compo
 const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'add-restaurant', component: AddRestaurantComponent },
-  { path: 'edit-restaurant', component: EditRestaurantComponent },
+  { path: 'edit-restaurant/:id', component: EditRestaurantComponent },
 ];
 
 @NgModule({

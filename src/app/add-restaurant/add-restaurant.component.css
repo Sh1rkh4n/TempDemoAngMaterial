@@ -1,8 +1,13 @@
-.container-restaurant {
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.allRestaurant {
+  padding: 20px;
 }
 
 .form-elements {
@@ -23,4 +28,10 @@ mat-raised-button {
   align-self: center;
   align-content: center;
   width: 500px;
+}
+
+mat-card {
+  margin: 20px;
+  padding: 20px;
+  outline-style: double;
 }
