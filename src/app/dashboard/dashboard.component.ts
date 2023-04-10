@@ -17,7 +17,6 @@ export class DashboardComponent implements AfterViewInit, OnInit {
   // oninit
   displayedColumns: string[] = ['id', 'name', 'owner', 'mobile', 'email', 'location', 'rating', 'action'];
   dataSource = new MatTableDataSource<Restaurant>();
-  allRestaurants: Restaurant[] = [];
 
   constructor(private restaurant: RestaurantService, public dialog: MatDialog, private _liveAnnouncer: LiveAnnouncer) {}
 
@@ -59,7 +58,7 @@ export class DashboardComponent implements AfterViewInit, OnInit {
 
   openDeleteModal(enterAnimationDuration: string, exitAnimationDuration: string, id: number, name: string): void {
     const deleteConfirmConst = this.dialog.open(RemRestaurantComponent, {
-      width: '250px',
+      width: '350px',
       enterAnimationDuration,
       exitAnimationDuration,
       data: { id, name },
@@ -67,7 +66,7 @@ export class DashboardComponent implements AfterViewInit, OnInit {
 
     deleteConfirmConst.afterClosed().subscribe((result) => {
       if (result) {
-        this.allRestaurants = this.allRestaurants.filter((f) => f.id !== id);
+        this.dataSource.data = this.dataSource.data.filter((f) => f.id !== id);
       }
     });
   }
