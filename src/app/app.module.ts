@@ -26,7 +26,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { RemRestaurantComponent } from './rem-restaurant/rem-restaurant.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, AddRestaurantComponent, EditRestaurantComponent, RemRestaurantComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    AddRestaurantComponent,
+    EditRestaurantComponent,
+    RemRestaurantComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
